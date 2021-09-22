@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(to left bottom, rgb(22, 22, 22), rgb(147, 148, 146));
+    height: 100vh;
+    background-position: center;
+    
+}
+
+header{
+    /* border:2px solid red; */
+    margin: auto;
+    margin-top: 3rem !important;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(206, 64, 39);
+    transition: 1s;
+    box-shadow: 0px 2px 8px 2px rgba(255, 255, 255, 0.404);
+}
+.modal:hover{
+    color: white;
+    background-color: tomato;
+    transform: translateY(-5px);
+}
+
+.hidden{
+    display: none;
+}
+
+.display{
+    /* border: 2px solid red;   */
+    width: 70vw;  
+    /* margin: auto; */
+    position: relative;    
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 2px white;
+    z-index: 10;
+}
+
+.closeModal{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-stretch: wider;
+    background: none;
+    cursor: pointer;
+}
+
+.display h1{
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    color: rgb(54, 54, 54);
+}
+.display p{
+    padding: 1rem 3rem 2rem 3rem;
+    font-size: 1rem;
+    
+}
+
+.blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(1px);
+}
+
+
+
+
+@media(max-width:1150px){
+    header{
+        width: 80vw; }
+}
+
+@media(max-width:1010px){
+    header{
+        width: 90vw; }
+}
+
+@media(max-width:900px){
+    header{
+        width: 80vw; }
+    .modal{
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+    }
+    
+}
+
+@media(max-width:800px){
+    .modal{
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+    } 
+    .display{
+        width: 80vw;
+    } 
+}
+
+@media(max-width:700px){
+    .modal{
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+    }
+    
+}
+
+@media(max-width:600px){
+    .display{
+        width: 70vw;
+        top: 40%;
+    }
+    .modal{
+        font-size: 0.5rem;
+        font-weight: bold;
+        padding: 0.6rem 1.5rem;
+        border-radius: 2rem;
+    }
+    .display h1{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        color: rgb(54, 54, 54);
+    }
+    .display p{
+        padding: 1rem 2rem 2rem 2rem;
+        font-size: 0.8rem;
+        
+    }
+    
+}
+
+@media(max-width:500px){
+    .display{
+        width: 80vw;
+        top: 40%;
+    }
+    .modal{
+        font-size: 0.5rem;
+        font-weight: bold;
+        padding: 0.4rem 1rem;
+        border-radius: 2rem;
+    }
+    .display h1{
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        color: rgb(54, 54, 54);
+    }
+    .display p{
+        padding: 1rem 2rem 2rem 2rem;
+        font-size: 0.8rem;
+        
+    }
+    
+}
+
+
+@media(max-width:400px){
+    .display{
+        width: 80vw;
+        top: 35%;
+    }
+    .modal{
+        font-size: 0.5rem;
+        font-weight: bold;
+        padding: 0.4rem 0.8rem;
+        border-radius: 2rem;
+    }
+    .display h1{
+        font-size: 0.8rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        color: rgb(54, 54, 54);
+    }
+    .display p{
+        padding: 1rem 2rem 2rem 2rem;
+        font-size: 0.6rem;
+        
+    }
+    .closeModal{
+        font-size: 1rem;
+        font-stretch: wider;
+    }
+    
+}
+
+@media(max-width:300px){
+    .modal{
+        font-size: 0.4rem;
+        font-weight: bold;
+        padding: 0.4rem 0.8rem;
+        border-radius: 2rem;
+    }
+    .display{
+        width: 90vw;
+        top: 40%;
+    }
+}
+
+
+
+
+
+
+
